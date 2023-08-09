@@ -1,0 +1,404 @@
+<%- include('./partials/header.ejs')%>
+    <div class = "content">
+        <h3><%= error.status%> Error</h3> 
+        <p><%= error.message%> </p>
+    </div>
+    <%- include('./partials/footer.ejs')%>
+
+
+
+    <!doctype html>
+<html lang="en">
+<!-- Now we will add if in this page -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Merriweather&#8217;rel=stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <style>
+        .carousel {
+            margin-bottom: 4rem;
+        }
+    </style>
+    <title>My Website!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-header-color">
+        <a class="navbar-brand" href="#">
+        <div style="display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            background-color: #ffffff;">
+           <div style="width: 389px;position: relative;margin: 21px 0px 13px 0;left: 10px;justify-self: start;
+           align-self: start;">
+           <div style="height: auto;width: 389px;position: relative;;margin: 0;padding: 0; border: 0;outline: 0;background: transparent;  display: block;">
+    <div>
+        <div style="--contentPaddingLeft: 0px;--contentPaddingRight: 0px;--contentPaddingTop: 0px;--contentPaddingBottom: 0px;--height: 85px;
+        --width: 86px;position: relative;margin: 0px 0px -14px 0;left: 0px;justify-self: start;align-self: start;top: auto;pointer-events: auto;
+    z-index: var(--z-index,auto);">
+    <div style="overflow: hidden;display: block;width: 100%; height: 100%;box-sizing: border-box;margin: 0;padding: 0;border: 0;outline: 0;background: transparent;">
+          <div style="grid-area: 1 / 1 / 2 / 2;"><img src="../images/EHE Logo_edited.png"class="d-block logo" alt="EHELogo"></div>
+         </div>
+    </div>
+    <div style="--min-height: 71px;
+    height: auto;width: 268px;position: relative;
+    left: 99px;justify-self: start;
+    margin-top: -100px;
+    align-self: start;overflow-wrap: break-word;
+    text-align: start;min-height: var(--min-height);min-width: var(--min-width);">
+    <h2 class="font2" style="font-size:60px; line-height:normal;margin:0;pointer-events: auto;"><span style="font-size: 60px;margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            vertical-align: baseline;
+            background: transparent;"><span class="color_14">
+        <span style="letter-spacing:0.1em;"><span style="font-family:dinneuzeitgroteskltw01-_812426,sans-serif;font-weight: bold;">CHAMPS</span></span></span></span></h2></div>
+    </div>
+   <div id="header-logo" style="--min-height: 30px;
+   height: auto;
+   width: 294px;
+   position: relative;
+   left: 96px;justify-self: start;align-self:start;overflow-wrap: break-word;"><h2 class="font1"><span><span style="color:rgb(90,163,210);"><span style="font-weight:normal;font-family:dinneuzeitgroteskltw01-_812426,sans-serif;"><span style="letter-spacing:0.01em;">
+            <span>Community HIV/AIDS Monitoring and Prevention Systems</span></span></span></span></span></h2></div>   
+    </div>
+</div>
+<div class="_2Hij5" style=" writing-mode: vertical-lr;margin-left: 4px;position: relative;margin-top: 20px;" ><div>
+    <h2 class="font2" style="font-size:18px; line-height:normal;"><span style="font-size:18px;"><span style="color:rgb(1,58,129);"><span style="letter-spacing:0.05em;"><span style="font-family:dinneuzeitgroteskltw01-_812426,sans-serif;font-weight: bold;">Dashboard</span></span></span></span></h2>
+    </div> 
+</div>
+
+</div>
+</div> 
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" style="background-color:rgb(193,150,46);border:rgb(255,255,255);border-radius: 20px;">
+            <ul class="navbar-nav mr-auto" style="position: absolute;
+            background-color: rgb(193,150,46);
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0,0,0,.6);">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">EHE Strategic Plan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News and Events</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Data
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Diagnosis</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Treat</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"> Prevent</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"> Respond</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"> Monitor</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"> Definitions</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"> Report Updates</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About US</a>
+                </li>
+            </ul>
+            
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+    <div data-mesh-id="comp-l28jxsl9inlineContent" data-testid="inline-content">
+    <div data-mesh-id="comp-l28jxsl9inlineContent-gridContainer" data-testid="mesh-container-content"></div></div>
+
+    <!-- Side Navigation box-->
+    <div style="width: 200px;
+    position: absolute;
+    height: auto;
+    margin:20px 0px 0px 20px;
+    border:5px solid rgb(1,58,129);">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <p style="text-align:center; text-decoration: underline;margin-top:3px;font-size: 14px;">Explore our data</p>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#"><p style="text-align:center;margin-bottom: -0.5em;font-size: 14px;">Diagnoses</p></a>
+            </li>
+            <li class="nav-item">
+              <p style="text-align:center;margin-bottom: 0.2em;font-size: 10px;">HIV Testing</p>
+            </li>
+            <li class="nav-item">
+              <p style="text-align:center;margin-bottom: 0.2em;font-size: 10px;">Time from Infection to Diagnosis</p>
+            </li>
+            <li class="nav-item">
+              <p style="text-align:center;margin-bottom: 0.2em;font-size: 10px;">Knowledge of status</p>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><p style="text-align:center;margin-bottom: -0.5em;font-size: 14px;">Treat</p></a>
+              </li>
+              <li class="nav-item">
+                <p style="text-align:center;margin-bottom: 0.2em;font-size: 1px;">Viral Supression</p>
+              </li>
+              <li class="nav-item">
+                <p style="text-align:center;margin-bottom: 0.2em;font-size: 10px;">Person lost from care</p>
+              </li>
+              <li class="nav-item">
+                <p style="text-align:center;margin-bottom: 0.2em;font-size: 10px;">Time linkage to care</p>
+              </li>
+              <li class="nav-item">
+                <p style="text-align:center;margin-bottom: 0.2em;font-size: 10px;">Percent of PLWH in care</p>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" href="#"><p style="text-align:center;margin-bottom: -0.5em;font-size: 14px;">Prevent</p></a>
+              </li>
+              <li class="nav-item">
+                <p style="text-align:center;margin-bottom: 0.2em;font-size: 10px;">Pre-exposure Prophylaxis(PrEP)</p>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#"><p style="text-align:center;margin-bottom: -0.5em;font-size: 14px;">Respond</p></a>
+              </li>
+              <li class="nav-item">
+                <p style="text-align:center;margin-bottom: 0.2em;font-size: 10px;">County Plan -TBD</p>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#"><p style="text-align:center;margin-bottom: -0.5em;font-size: 14px;">Monitor</p></a>
+              </li>
+              <li class="nav-item">
+                <p style="text-align:center;margin-bottom: 0.2em;font-size: 10px;">Incidence</p>
+              </li>
+              <li class="nav-item">
+                <p style="text-align:center;margin-bottom: 0.2em;font-size: 10px;">Prevalence</p>
+              </li>
+              <li class="nav-item">
+                <button style="margin-bottom: 0.2em;font-size: 14px;margin-left: 4em;">Definitions</button>
+              </li>
+              <li class="nav-item">
+                <button style="margin-bottom: 0.2em;font-size: 14px;margin-left: 3em;">Report Updates</button>
+              </li>
+          </ul>
+    </div>
+    <!--Now we want carousel-->
+    <div style="width:722px;height:42px;position: relative;
+    margin: 10px 0px 35px 0;left:400px;justify-self: start;align-self: start;">
+        <h1 class="font0" style="text-align:center; font-size:30px;font-family: Merriweather, Georgia, serif;"><span style="color:rgb(1,58,129);">What's the status of the HIV epidemic in our community?</span></h1>
+    </div>
+    <div style="width:500px;height:36px;position: relative;
+    margin: 0px 0px 10px 0;left:530px;justify-self: start;align-self: start;">
+        <h2 class="font2"><span style="color:rgb(1,58,129);font-family: Merriweather, Georgia, serif;">Mecklenburg County, North Carolina</span></h1>
+    </div>
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" style="margin-left: 400px;width:722px;" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            
+            <!-- Inner -->
+  <div class="carousel-inner">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <video class="img-fluid" autoplay loop muted>
+        <source src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4" type="video/mp4" />
+      </video>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>
+          Nulla vitae elit libero, a pharetra augue mollis interdum.
+        </p>
+      </div>
+    </div>
+  
+                <div class="carousel-item">
+                    <img src="../images/Incidence_Donut_Chart.PNG"
+                        class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/Screenshot_Map_Graph_PrEP usage in county.PNG"
+                        class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" style="margin-right: 10px;" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Learn More section-->
+    <div id="comp-l1uslcur" class="_2Hij5" data-testid="richTextElement">
+        <h2 class="font2" style="font-size:26px;"><span style="color:rgb(1,58,129);font-family: Merriweather, Georgia, serif;">Learn more about the data</span></h2>
+        <div><br></div>
+        <a class="btn btn-primary" style="background-color:rgb(1,58,129);border-radius: 20px;width:100px;font-family: Merriweather, Georgia, serif;" href="#" role="button">Diagnoses</a>
+        <a class="btn btn-primary" style="background-color:rgb(1,58,129);border-radius: 20px;width:100px;font-family: Merriweather, Georgia, serif;" href="#" role="button">Treat</a>
+        <a class="btn btn-primary" style="background-color:rgb(1,58,129);border-radius: 20px;width:100px;font-family: Merriweather, Georgia, serif;" href="#" role="button">Prevent</a>
+        <a class="btn btn-primary" style="background-color:rgb(1,58,129);border-radius: 20px;width:100px;font-family: Merriweather, Georgia, serif;" href="#" role="button">Respond</a>
+        <a class="btn btn-primary" style="background-color:rgb(1,58,129);border-radius: 20px;width:100px;font-family: Merriweather, Georgia, serif;" href="#" role="button">Monitor</a>
+    </div>
+    <!--Now use grid and card inside container-->
+
+    <div class="comp-l322d8y8" style="border-top: 1px solid rgba(30,54,70);"></div>
+    <div><br></div>
+    <div class="comp-l322d8y8" style="border-top: 5px solid rgba(30,54,70);"></div>
+    <div style="width:100%;height:558px;background-color: rgb(90,163,210);">
+        <div class="card bg-light mb-3" style="max-width:25rem;background-color: rgb(90,163,210);border: none;margin-left: 500px;">
+            <div class="card-body" style="background-color: rgb(90,163,210);width:415px;height:130px;">
+              <p class="card-text" style="color: #ffffff;font-size: 1.15rem;font-family: Merriweather, Georgia, serif;">We have the tools to end the HIV epidemic in the United States and in Mecklenburg County, North Carolina. Many advancements in medicine and technology have improved HIV prevention, testing, treatment, and communication to reduce HIV.</p>
+            </div>
+             <div class="card-body" style="background-color: rgb(90,163,210);width:415px;height:130px;">
+                <p class="card-text" style="color: #ffffff;font-size: 1.15rem;font-family: Merriweather, Georgia, serif;">Although significant progress has been made, Mecklenburg County has the highest rate of new HIV diagnoses in the state. The tools we have are not effectively reaching the people who may most benefit from them. Disparities in key populations and geographic areas persist.</p>
+              </div>
+                 <div class="card-body" style="background-color: rgb(90,163,210);width:415px;height:130px;">
+                <p class="card-text" style="color: #ffffff;font-size: 1.15rem;font-family: Merriweather, Georgia, serif;">The purpose of the Mecklenburg County Community HIV/AIDS Monitoring and Prevention Systems (CHAMPS) Dashboard is to improve access to HIV data in order to empower our entire community to address ongoing barriers, identify gaps in care and policy, and enhance local efforts and programs to effectively reduce HIV disparities and advance health equity for everyone.</p>
+                 </div>
+             </div>
+            <div class="vl" style="margin-left:950px;margin-top:-300px"> </div>
+            <div style="margin-left:1200px;margin-top:-200px"> <p class="card-text" style="color: #ffffff;font-size: 2.15rem;font-family: Merriweather, Georgia, serif;">Improve</p>
+                <p class="card-text" style="color: #ffffff;font-size: 2.15rem;font-family: Merriweather, Georgia, serif;">Empower</p>
+                <p class="card-text" style="color: #ffffff;font-size: 2.15rem;font-family: Merriweather, Georgia, serif;">Advance</p>
+            </div>
+    </div>
+    <div class="comp-l322d8y8" style="border-top: 5px solid rgba(30,54,70);"></div>
+
+    <!--whats our community plan-->
+     <div><br></div>
+    <section id="comp-l0b9zfv4" class="_3d64y"><div id="bgLayers_comp-l0b9zfv4" data-hook="bgLayers" class="_3wnIc"><div data-testid="colorUnderlay" class="_3KzuS _3SQN-"></div><div id="bgMedia_comp-l0b9zfv4" class="_2GUhU"></div></div>
+    <div data-testid="columns" class="_1uldx"><div id="comp-l0b9zfv7" class="_1vNJf"><div id="bgLayers_comp-l0b9zfv7" data-hook="bgLayers" class="_3wnIc"><div data-testid="colorUnderlay" class="_3KzuS _3SQN-"></div><div id="bgMedia_comp-l0b9zfv7" class="_2GUhU"></div></div><div data-mesh-id="comp-l0b9zfv7inlineContent" data-testid="inline-content" class="">
+    <div data-mesh-id="comp-l0b9zfv7inlineContent-gridContainer" data-testid="mesh-container-content"><div id="comp-l28iipuh" class="_2UdPt"></div><div id="comp-l0b9zfva" class="_2Hij5" data-testid="richTextElement"><h1 class="font_0" style="text-align:center; font-size:1.4em; font-weight:bold; font-family: Merriweather, Georgia, serif;color:rgb(1,58,129)">What's our community's plan?</h1></div>
+    <div><br></div>
+    <div id="comp-l1usyzyo" class="_2Hij5" data-testid="richTextElement" style="margin-left:650px; width:400px;">
+    <p class="font_7" style="font-size:16px;font-family: Merriweather, Georgia, serif;">The Getting to Zero Plan, updated in 2020, includes four pillars to Diagnose, Treat, Prevent, and Respond to HIV</p></div><div id="comp-l2v23ci2" style="margin-left:500px;" class="XUUsC"><div data-testid="linkElement" class="xQ_iF"><wix-image id="img_comp-l2v23ci2" class="_1-6YJ _1Fe8-" data-image-info="{&quot;containerId&quot;:&quot;comp-l2v23ci2&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:2167,&quot;height&quot;:820,&quot;uri&quot;:&quot;97d6c7_be69a0650c19482bb819702139690c26~mv2.png&quot;,&quot;name&quot;:&quot;4Pillars_NewColors_6May22.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-image-zoomed="" data-has-ssr-src="" data-src="https://static.wixstatic.com/media/97d6c7_be69a0650c19482bb819702139690c26~mv2.png/v1/fill/w_600,h_227,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4Pillars_NewColors_6May22.png"><img src="https://static.wixstatic.com/media/97d6c7_be69a0650c19482bb819702139690c26~mv2.png/v1/fill/w_600,h_227,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4Pillars_NewColors_6May22.png" alt="4Pillars_NewColors_6May22.png" style="width:600px;height:227px;object-fit:cover;object-position:50% 50%"></wix-image></div></div>
+    <div id="comp-l33eczut" class="_1ncY2"><div class="_13Lxq" data-testid="container-bg"></div>
+    </div></div></div></div></div>
+    
+    <div class="container px-lg-5" style="margin-left:560px;width:500px;">
+        <div class="row mx-lg-n5">
+          <div class="col py-3 px-lg-5" style="border:2px red solid;height: 122px;width:500px;">
+            <div id="comp-l33ehh4l" style="margin-left: 185px;"class="XUUsC"><div data-testid="linkElement" class="xQ_iF"><wix-image id="img_comp-l33ehh4l" class="_1-6YJ _1Fe8-" data-image-info="{&quot;containerId&quot;:&quot;comp-l33ehh4l&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:384,&quot;height&quot;:384,&quot;uri&quot;:&quot;97d6c7_9d33fbf87bd8444d92ec735ec5cc606c~mv2.png&quot;,&quot;name&quot;:&quot;Monitor_Graph_Icon_11May22.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-image-zoomed="" data-has-ssr-src="" data-src="https://static.wixstatic.com/media/97d6c7_9d33fbf87bd8444d92ec735ec5cc606c~mv2.png/v1/fill/w_35,h_35,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Monitor_Graph_Icon_11May22.png">
+                <img src="https://static.wixstatic.com/media/97d6c7_9d33fbf87bd8444d92ec735ec5cc606c~mv2.png/v1/fill/w_35,h_35,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Monitor_Graph_Icon_11May22.png" alt="Monitor_Graph_Icon_11May22.png" style="width:35px;height:35px;object-fit:cover;object-position:50% 50%"></wix-image></div></div><div id="comp-l33esdua" style="margin-left: 170px;"class="_2Hij5" data-testid="richTextElement"><h6 class="font_6" style="font-size:18px;"><span style="color:#000000;"><span style="font-size:18px;"><span style="font-family:kanit,sans-serif;"><span style="font-weight:normal;">Monitor</span></span></span></span></h6></div><div id="comp-l33exmb8" class="_2Hij5" data-testid="richTextElement">
+                <ul class="font_6" style="color:rgb(0, 0, 0); font-family:kanit, sans-serif; font-size:13px; font-weight:normal;">
+                    <li>
+                        <h6 class="font_6" style="font-size:13px;"><span style="font-size:13px;"><span style="color:#000000;"><span style="font-weight:normal;"><span style="font-family: Merriweather, Georgia, serif;">Monitor trends over time in new HIV diagnoses and the total number of people living with HIV (PLWH).</span></span></span></span></h6>
+                    </li>
+                </ul>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div></div>
+<div><br></div>
+<div><br></div>
+<div><br></div>
+<div id="comp-l1ut1am1" class="XUUsC _2S73V" style="margin-left:560px;width:500px;"><a data-testid="linkElement" href="https://www.wsoctv.com/2019/08/02/meck-county-teams-up-with-organizations-to-help-slash-hiv-infection-rates/" target="_blank" rel="noreferrer noopener" class="xQ_iF"><wix-image id="img_comp-l1ut1am1" class="_1-6YJ _1Fe8-" data-image-info="{&quot;containerId&quot;:&quot;comp-l1ut1am1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:731,&quot;height&quot;:502,&quot;uri&quot;:&quot;97d6c7_6364d4adcdc64e77a84d7975eb9ccf1b~mv2.jpg&quot;,&quot;name&quot;:&quot;WSOC_Screenshot_2minInterview.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-image-zoomed="" data-has-ssr-src="" data-src="https://static.wixstatic.com/media/97d6c7_6364d4adcdc64e77a84d7975eb9ccf1b~mv2.jpg/v1/fill/w_518,h_356,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WSOC_Screenshot_2minInterview.jpg"><img src="https://static.wixstatic.com/media/97d6c7_6364d4adcdc64e77a84d7975eb9ccf1b~mv2.jpg/v1/fill/w_518,h_356,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WSOC_Screenshot_2minInterview.jpg" alt="WSOC_Screenshot_2minInterview.jpg" style="width:518px;height:356px;object-fit:cover;object-position:50% 50%"></wix-image></a><div id="comp-l27ufgn1" class="XUUsC" style="margin-top: -20px;
+margin-left: 480px;"><div data-testid="linkElement" class="xQ_iF"><wix-image id="img_comp-l27ufgn1" class="_1-6YJ _1Fe8-" data-image-info="{&quot;containerId&quot;:&quot;comp-l27ufgn1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:204,&quot;height&quot;:206,&quot;uri&quot;:&quot;97d6c7_af15ee1c50064030bf1c82ac5a7a41b8~mv2.png&quot;,&quot;name&quot;:&quot;Ribbon and State Outline_edited.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-image-zoomed="" data-has-ssr-src="" data-src="https://static.wixstatic.com/media/97d6c7_af15ee1c50064030bf1c82ac5a7a41b8~mv2.png/v1/fill/w_65,h_66,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Ribbon%20and%20State%20Outline_edited.png"><img src="https://static.wixstatic.com/media/97d6c7_af15ee1c50064030bf1c82ac5a7a41b8~mv2.png/v1/fill/w_65,h_66,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Ribbon%20and%20State%20Outline_edited.png" alt="Ribbon and State Outline_edited.png" style="width:65px;height:66px;object-fit:cover;object-position:50% 50%"></wix-image></div></div></div>
+<div>&nbsp;</div>
+<div id="comp-l1ut0oar" class="_2Hij5" data-testid="richTextElement"><p class="font_7" style="font-size:16px;">Learn more about how stigma plays an important role in the epidemic here.</p></div><div id="comp-l1ut0oar" class="_2Hij5" data-testid="richTextElement"><p class="font_7" style="font-size:16px;">Learn more about how the Mecklenburg County Ending the HIV Epidemic (EHE) Strategic Plan <span style="text-decoration:underline;"><a href="https://www.mecknc.gov/HealthDepartment/GettingToZero/Documents/Mecklenburg%20County%27s%20Ending%20the%20HIV%20Epidemic%20Plan.pdf" target="_blank" rel="noreferrer noopener">here</a></span>.</p></div>
+<div id="comp-l2ggl7ri" class="_1ncY2" style="width: 174px;border: 6px rgb(1,58,129) solid; margin-left:900px;margin-top: -150px;;"><div class="_13Lxq" data-testid="container-bg"></div><div data-mesh-id="comp-l2ggl7riinlineContent" data-testid="inline-content" class=""><div data-mesh-id="comp-l2ggl7riinlineContent-gridContainer" data-testid="mesh-container-content">
+<div id="comp-l2ggl7sg" class="XUUsC _2S73V"><a data-testid="linkElement" href="https://www.mecknc.gov/HealthDepartment/GettingToZero/Documents/Mecklenburg%20County%27s%20Ending%20the%20HIV%20Epidemic%20Plan.pdf" target="_blank" rel="noreferrer noopener" class="xQ_iF"><wix-image id="img_comp-l2ggl7sg" class="_1-6YJ _1Fe8-" data-image-info="{&quot;containerId&quot;:&quot;comp-l2ggl7sg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;imageData&quot;:{&quot;width&quot;:812,&quot;height&quot;:1051,&quot;uri&quot;:&quot;97d6c7_cac83ead0f2e4f378f4e5b2971c26b93~mv2.jpg&quot;,&quot;name&quot;:&quot;Screenshot_EHECoverPage.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}" data-bg-effect-name="" data-image-zoomed="" data-has-ssr-src="" data-src="https://static.wixstatic.com/media/97d6c7_cac83ead0f2e4f378f4e5b2971c26b93~mv2.jpg/v1/fill/w_161,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Screenshot_EHECoverPage.jpg"><img src="https://static.wixstatic.com/media/97d6c7_cac83ead0f2e4f378f4e5b2971c26b93~mv2.jpg/v1/fill/w_161,h_209,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Screenshot_EHECoverPage.jpg" alt="Screenshot_EHECoverPage.jpg" style="width:161px;height:209px;object-fit:cover;object-position:50% 50%"></wix-image></a></div></div></div></div>
+<div id="comp-l2gksd23" class="_2Hij5" style="margin-left:900px;" data-testid="richTextElement"><h6 class="font_6" style="font-size:13px;"><span style="font-style:italic;font-family: Merriweather, Georgia, serif;">Click above image<br>
+for full document.</span></h6></div>
+<div id="comp-l3229hvk" class="_2UdPt"></div><div data-mesh-id="comp-l0b9zfv7inlineContent-wedge-3"></div><div data-mesh-id="comp-l0b9zfv7inlineContent-wedge-8"></div></div></div></div></div></section>
+<div class="comp-l322d8y8" style="border-top: 1px solid rgba(30,54,70);"></div>
+    <div><br></div>
+    <div class="comp-l322d8y8" style="border-top: 5px solid rgba(30,54,70);"></div>
+<!-- how to get involved-->
+<div style="width:100%;height:548px;background-color: rgb(90,163,210);">
+    <div data-mesh-id="comp-l26920csinlineContent-gridContainer" data-testid="mesh-container-content">
+        <div id="comp-l1uteifc" class="_2Hij5"data-testid="richTextElement"><h1 class="font_0" style="text-align:center; font-size:30px;"><span style="color:#FFFFFF;font-family: Merriweather, Georgia, serif;">How to get involved</span></h1></div>
+        <div><br></div>
+        <div id="comp-l1uthabw" class="_2Hij5" data-testid="richTextElement"  style="margin-left:650px;" >
+        <ul class="font_5" style="color:rgb(255, 255, 255); font-weight:normal; font-size:18px;">
+        <li>
+        <h5 class="font_5" style="font-size:18px;"><span><span style="color:#FFFFFF;font-family: Merriweather, Georgia, serif;">Request HIV testing for an event</span></span></h5>
+        </li>
+        </ul></div>
+        <div id="comp-l1utjpy1" class="_2Hij5" data-testid="richTextElement" style="margin-left:650px;"><ul class="font_5 color_21" style="font-weight:normal; font-size:18px; color:rgb(255, 255, 255); font-weight:normal;">
+        <li>
+        <h5 class="font_5" style="font-size:18px;"><span><span  style="color:#FFFFFF;font-family: Merriweather, Georgia, serif;">HIV/STI Testing hotline: 704-432-8378</span></span></h5>
+        </li>
+        </ul></div>
+        <div id="comp-l1utju7a" class="_2Hij5" data-testid="richTextElement" style="margin-left:650px;"><ul class="font_5 color_21" style="color:rgb(255, 255, 255); font-weight:normal;font-size:18px;">
+        <li>
+        <h5 class="font_5" style="font-size:18px;"><span style="color:#FFFFFF;font-family: Merriweather, Georgia, serif;">Find a nearby clinic by clicking <span style="text-decoration:underline;"><a href="https://www.mecknc.gov/HealthDepartment/CDControl/HIVSTDSurveillance/Pages/Community-Testing-Sites.aspx" target="_blank" rel="noreferrer noopener">here</a></span></span></h5>
+        </li>
+        </ul></div>
+        <div id="comp-l1utkb0a" class="_2Hij5" data-testid="richTextElement" style="margin-left:650px;"><ul class="font_5 color_21" style="color:rgb(255, 255, 255); font-weight:normal;font-size:18px;">
+        <li>
+        <h5 class="font_5" style="font-size:18px;"><span  style="color:#FFFFFF;font-family: Merriweather, Georgia, serif;">Complete a request form by clicking here</span></h5>
+        </li>
+        </ul></div>
+        <div id="comp-l1utmvkh1" class="_2Hij5" data-testid="richTextElement" style="margin-left:650px;"><ul class="font_5 color_21" style="color:rgb(255, 255, 255); font-weight:normal;font-size:18px;">
+        <li>
+        <h5 class="font_5" style="font-size:18px;"><span style="color:#FFFFFF;font-family: Merriweather, Georgia, serif;">Join the Getting to Zero community group</span></h5>
+        </li>
+        </ul></div>
+        <div id="comp-l1utmvkk" class="_2Hij5" data-testid="richTextElement" style="margin-left:650px;"><ul class="font_5 color_21" style="color:rgb(255, 255, 255); font-weight:normal;font-size:18px;">
+        <li>
+        <h5 class="font_5" style="font-size:18px;"><span  style="color:#FFFFFF;font-family: Merriweather, Georgia, serif;">Learn about upcoming news and events</span></h5>
+        </li>
+        </ul></div>
+        <div id="comp-l1utmvkk5" class="_2Hij5" data-testid="richTextElement" style="margin-left:650px;"><ul class="font_5 color_21" style="color:rgb(255, 255, 255); font-weight:normal;font-size:18px;">
+        <li>
+        <h5 class="font_5" style="font-size:18px;"><span style="color:#FFFFFF;font-family: Merriweather, Georgia, serif;">Let us know how we're doing</span></h5>
+        </li>
+        </ul></div>
+        <div id="comp-l1utmvkl4" class="_2Hij5" data-testid="richTextElement" style="margin-left:650px;"><ul class="font_5 color_21" style="color:rgb(255, 255, 255); font-weight:normal;font-size:18px;">
+        <li>
+        <h5 class="font_5" style="font-size:18px;"><span style="color:#FFFFFF;font-family: Merriweather, Georgia, serif;">Learn more</span></h5>
+        </li>
+        </ul></div></div>
+</div>
+<div data-mesh-id="comp-l28jxsl9inlineContent" data-testid="inline-content">
+    <div data-mesh-id="comp-l28jxsl9inlineContent-gridContainer" data-testid="mesh-container-content"></div></div>
+   
+    <!--Now we need footer section (Simple footer)-->
+    <footer class="bg-primary p-3">
+        <div class="text-center text-white">
+            © 2024 Academy of Population Health Innovation<a href="#">MyWebsite.com</a>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+
+</html>

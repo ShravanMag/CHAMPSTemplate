@@ -1,0 +1,957 @@
+/* # # # # # # # # # # #
+
+CSS Reset
+
+# # # # # # # # # # # */
+
+html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,acronym,img,ol,ul,li {
+	border: 0;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 62.5%;
+	font-family: inherit;
+}	
+
+/* # # # # # # # # # # #
+
+Setting the core font-size for different breakpoints
+
+# # # # # # # # # # # */
+	
+
+
+@media (min-width: 300px) {
+	html {
+		font-size: 100%; /* 100% of 16px = 16px */
+	}
+}
+
+@media (min-width: 900px) {
+	html {
+		font-size: 125%; /* 125% of 16px = 20px */
+	}
+}
+
+@media (min-width: 1240px) {
+	html {
+		font-size: 163%; /* 163% of 16px = 26px */
+	}
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* # # # # # # # # # # #
+
+Type and Image styles
+
+# # # # # # # # # # # */
+
+p, label {
+	font-family: 'Gelasio', serif;
+	font-size: 1.0rem;
+	line-height: 1.25rem;
+	color: #211746;
+	margin-bottom: 1.0rem;
+}
+
+.whiteText {
+	color: #FFF;
+}
+
+.whiteText a {
+	color: #FFF;
+}
+
+.darkBlueText {
+	color: #211746;
+}
+
+.goldText {
+	color: #C1962E;
+}
+
+h1 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+	max-width: 88%;
+	color: #185A61;
+	margin: 0.5rem 0.0rem 1.0rem 0.0rem;
+}
+
+.knockoutHeader {
+	font-size: 1.35rem;
+	line-height: 1.75rem;
+	padding: 1.0rem;
+	margin-top: -1.0rem;
+	background-color: #F4F1E4;
+	border-radius: 18px;
+}
+
+h2 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 600;
+	font-size: 1.0rem;
+	margin-bottom: 0.8rem;
+	color: #00525B;
+}
+
+.pillarsIcons h2 {
+	font-size: 1.0rem;
+	margin-bottom: 0.4rem;
+	color: #fff;
+}
+
+#monitorLabel {
+	color: #5D594D;
+}
+
+.readMore {
+	font-size: 0.7rem;
+	color: #211746;
+	text-decoration: none;
+	background-color: #92C138;
+	padding: 0.8rem;
+	border-radius: 32px;
+	border: 3px solid #D4EF62;
+}
+
+.interiorSubheads {
+	margin-bottom: 0.4rem;
+}
+
+#whatIsReadMore  {
+	color: #4D3300;
+	background-color: #E4BB60;
+	border: 3px solid #9B7319;
+}
+
+h3 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 600;
+	font-size: 1.0rem;
+	line-height: 1.1rem;
+	color: #4F82BA;
+}
+
+h3#CHAMPSTag {
+	display: none;
+	vertical-align: top;
+}
+
+#CHAMPSTagSmaller {
+	font-size: 0.8rem;
+}
+
+div#menuButtons li {
+	display: inline-block;
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.0rem;
+	padding: 0.2rem 0.4rem 0.2rem 0.1rem;
+	color: #FFF;
+	border-right: 1px solid #487DA9;
+}
+
+div#menuButtons li:last-child {
+	border-right: none;
+}
+
+div#menuButtons li a, div#dataMenu li a, div#footerMenu li a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+div#menuButtons .here {
+	background-color: #00525B;
+	border-radius: 8px 8px 0px 0px;
+}
+
+div#dataMenu ul {
+	list-style-type: none;
+	margin: 0.0rem 0.0rem 0.3rem 1.0rem;
+}
+
+div#dataMenu li {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.0rem;
+	line-height: 1.3rem;
+	padding: 0.0rem 0.25rem 0.0rem 0.25rem;
+}
+
+div#dataMenu li:first-child {
+	border-radius: 8px;
+}
+
+div#dataMenu ul:last-child {
+	margin-bottom: 0.7rem;
+}
+
+div#dataQuickAccess ul {
+	list-style-type: none;
+	margin-left: 1.0rem;
+}
+
+div#dataQuickAccess li {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.0rem;
+	line-height: 1.3rem;
+	padding: 0.0rem 0.25rem 0.0rem 0.25rem;
+}
+
+div#dataQuickAccess li a {
+	text-decoration: none;
+	border-radius: 4px;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+}
+
+#monitorButton {
+	color: #5D594D;
+	background-color: #D8D8CC;
+}
+
+#diagnoseButton {
+	color: #FFF;
+	background-color: #88A022;
+}
+
+#treatButton {
+	color: #FFF;
+	background-color: #997117;
+}
+
+#preventButton {
+	color: #FFF;
+	background-color: #2E7E82;
+}
+
+#respondButton {
+	color: #FFF;
+	background-color: #011333;
+}
+
+div#footerMenu ul {
+	list-style-type: none;
+	margin-top: 1.0rem;
+}
+
+div#footerMenu li {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.2rem;
+	padding: 0.0rem 0.4rem 0.0rem 0.6rem;
+	color: #FFF;
+}
+
+img#MeckSeal {
+	width: 60px;
+	margin: 0.2rem 0.2rem 0.0rem 0.4rem;
+}
+
+img#CHAMPSLogo {
+	width: 160px;
+	margin-left: 1.0rem;
+	display: inline-block;
+}
+
+img#hero {
+	width: 100%;
+}
+
+img#nccare360Pic {
+	width: 100%;
+}
+
+img#gTwoZDoingYourPart {
+	width: 92%;
+}
+
+#endEpidemicYTVideo {
+	width: 100%;
+	height: 120%;
+}
+
+#dataChartOne {
+	border: 1px dotted blue;
+	width: 94%;
+	height: 270px;
+}
+
+#dataChartTwo {
+	border: 1px dotted red;
+	width: 94%;
+	height: 270px;
+}
+
+img.textPicRt {
+	width: 100%;
+	float: right;
+}
+
+img#MeckSealFooter {
+	width: 15%;
+	margin: 2%;
+}
+
+img#APHILogo {
+	width: 25%;
+	margin: 2%;
+}
+
+img#UNCCLogo {
+	width: 26%;
+	margin: 2%;
+}
+
+
+/* # # # # # # # # # # #
+
+Changes to type or image for horizontal phone orientation and larger
+
+# # # # # # # # # # # */
+
+@media only screen and (min-width: 700px) {
+
+	h1 {
+		font-size: 1.85rem;
+		max-width: 100%;
+	}
+	
+	h1#statusChart {
+		font-size: 1.65rem;
+	}
+	
+	.knockoutHeader {
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+	
+	img#CHAMPSLogo {
+		width: 220px;
+		margin-left: 2.0rem;
+	}	
+
+	div#menuButtons li {
+		font-size: 0.7rem;
+		padding: 0.2rem 0.9rem 0.3rem 0.7rem;
+	}
+	
+	div#dataMenu li {
+		display: inline-block;
+	}
+	
+	div#dataMenu li:first-child {
+		margin-left: -1.0rem;
+	}
+
+	h3#CHAMPSTag {
+		display: inline-block;
+		margin-top: 0.4rem;
+		max-width: 230px;
+	}
+
+	div#contactUsForm input, textarea {
+		width: 100%;
+		padding: 0.3rem;
+		margin: 0.3rem;
+	}
+	
+	div#contactUsForm textarea {
+		height: 200px;
+	}
+
+	#endEpidemicYTVideo {
+		width: 700px;
+		height: 400px;
+	}
+	
+	img.textPicRt {
+		max-width: 380px;
+		margin: 0.0rem 0.0rem 1.0rem 3.0rem;
+	}
+
+}
+
+/* # # # # # # # # # # #
+
+Changes to type or image for largest screens
+
+# # # # # # # # # # # */
+
+@media only screen and (min-width: 780px) {
+  /* For mobile screens: */
+
+	div#menuButtons li {
+		font-size: 0.9em;
+	}
+
+	div#dataQuickAccess li {
+		display: inline-block;
+	}
+
+	img#MeckSeal {
+		width: 160px;
+	}
+
+}
+
+/* # # # # # # # # # # #
+
+Changes to type or image for largest screens
+
+# # # # # # # # # # # */
+
+@media only screen and (min-width: 1000px) {
+
+	div#menuButtons li {
+		font-size: 1.0em;
+	}
+
+	h3#CHAMPSTag {
+		display: inline-block;
+		margin-top: 0.4rem;
+		max-width: 360px;
+	}
+
+	img#MeckSeal {
+		width: 180px;
+	}
+	
+	img#CHAMPSLogo {
+		width: 330px;
+		margin-left: 2.0rem;
+	}
+
+	#dataChartOne {
+		border: 1px dotted blue;
+		width: 94%;
+		height: 500px;
+	}
+
+	#dataChartTwo {
+		border: 1px dotted red;
+		width: 94%;
+		height: 500px;
+	}
+
+}
+
+
+/* # # # # # # # # # # #
+
+Layout (div) styles
+
+# # # # # # # # # # # */
+
+
+/* SHARED DIV or PIC STYLES */
+
+.centerContents {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.dataVisualizations {
+	border-radius: 24px;
+	padding: 0.0rem 2.0rem 0.0rem 2.0rem;
+}
+
+.dataCol {
+	margin: 2% 0% 0% 0%;
+	display: grid;
+	column-gap: 1.3rem;
+	grid-template-columns: 1fr;
+}
+
+.dataBrief {
+	text-align: left;
+}
+
+.dataChart {
+	background-color: #FFF;
+	padding: 2.0rem;
+	border-radius: 32px;
+	width: 92%;
+	margin-bottom: 2.0rem;
+}
+
+.dataChart img {
+	width: 96%;
+}
+
+.textContent {
+	text-align: left;
+	margin: 0% 8% 0% 8%;
+}
+
+.twoCol {
+	display: grid;
+	grid-template-columns: 1fr;
+	column-gap: 1.3rem;
+}
+
+.pillarsIcons {
+	background-color: #999;
+	margin: 1.0rem;
+	padding: 0.6rem;
+	border-radius: 8px;
+	border: 8px solid #888;
+}
+
+#pillarsDiagnose {
+	background-color: #B0D239;
+	border: 8px solid #88A022;
+}
+
+#pillarsTreat {
+	background-color: #C1962E;
+	border: 8px solid #997117;
+}
+
+#pillarsPrevent {
+	background-color: #185A61;
+	border: 8px solid #003A3D;
+}
+
+#pillarsRespond {
+	background-color: #032D77;
+	border: 8px solid #011333;
+}
+
+#pillarsMonitor {
+	background-color: #D8D8CC;
+	border: 8px solid #B7B19A;
+}
+
+.pillarsIcons img {
+	width: 100%;
+	margin: 0.3rem;
+}
+
+.communityMessages {
+	display: grid;
+	grid-template-columns: 1fr;
+	column-gap: 1.3rem;
+}
+
+.communityMessages div {
+	padding: 1.0rem;
+}
+
+.resourcesVideo {
+	height: auto;
+}
+
+div.photosPagePics {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+div.photosColumn {
+  flex: 100%;
+}
+
+div.photosColumn img {
+  vertical-align: middle;
+}
+
+div.photosColumn img {
+	width: 96%;
+	margin: 2%;
+}
+
+/* SPECIFIC DIV STYLES */
+
+div#wrapper {
+	margin: 0 auto;
+	background-color: #D2D0C2;
+}
+
+div#pageContent {
+	max-width: 1600px;
+	margin: 0 auto;
+	background-color: #F4F1E4;
+}
+
+div#header {
+	position: fixed;
+	width: 100%;
+	max-width: 1600px;
+	background-color: #100A2D;
+	background-image: linear-gradient(#100A2D 95%, #191E56 5%);
+}
+
+div#headerLogos {
+	display: grid;
+	grid-template-columns: 1fr 6fr;
+}
+
+div#seal {
+	display: none;
+}
+
+div#CHAMPSLogoBox {
+	background-color: #211746;
+	border-radius: 0px 0px 0px 24px;
+}
+
+div#menuButtons {
+	text-align: center;
+	overflow: hidden;
+}
+
+div#interiorPage {
+	margin-bottom: 3.0rem;
+}
+
+div#fixedMenuFix {
+  	height: 5.4rem;
+}
+
+div#fixedMenuFixRegular {
+	height: 6.0rem;
+}
+
+#HIVselfTestYT {
+	border: 1px dotted blue;
+}
+
+div#heroImage {
+	padding-top: 4.2rem;
+}
+
+div#whatIsGTwoZ {
+	background-color: #C1962E;
+	background-image: url("../images/whatIsG2ZBackground.png");
+	background-size: 300%;
+	background-repeat: no-repeat;
+}
+
+div#whatIsGTwoZColOnePic {
+	background-image: url("../images/unsplash_photo_by_tide_trasher.jpg");
+	background-position: center;
+	background-size: cover;
+	min-height: 280px;
+	border-radius: 0px 0px 32px 32px;
+	margin: 0% 0% 0% 0%;
+}
+
+div#whatIsGTwoZColTwo {
+	padding: 1.0rem;
+	margin: 0% 0% 0% 0%;
+}
+
+div#gettingToZeroTagline {
+	background-color: #C1962E;
+	padding: 0.6rem;
+	display:grid;
+}
+
+div#gettingToZeroTagline div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div#pillarsIconsContainer {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+div#mission {
+	background-image: url("../images/missionBackground.png");
+	background-size: 300%;
+	margin: 0% 4% 2.0rem 4%;
+	padding: 0.0rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	border-radius: 24px;
+}
+
+div#mission div {
+	padding: 1.0rem 1.0rem 0.0rem 1.0rem;
+}
+
+div#mission div:first-child {
+	margin-top: 4.0rem;
+}
+
+div#mission div:last-child {
+	margin: 1.0rem 0.0rem 2.0rem 0.0rem;
+}
+
+div#missionColThree {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div#endEpidemicYT {
+	background-color: #00525B;
+	margin: 0% 4% 2.0rem 4%;
+	border-radius: 45px 45px 0px 0px;
+}
+
+div#endEpidemicYT div:first-child {
+	padding: 2.0rem;
+}
+
+div#dataOverview {
+	background-color: #00525B;
+	background-image: url("../images/dataMenuBackground.png");
+	background-size: 280%;
+	background-repeat: no-repeat;
+	margin: 0% 4% 3.0rem 4%;
+	border-radius: 45px;
+}
+
+div#dataMenu {
+	padding: 1.0rem 1.3rem 1.3rem 1.3rem;
+	text-align: left;
+}
+
+div#dataQuickAccess {
+	position: fixed;
+	background-color: #185A61;
+	padding: 0.2rem;
+	border-radius: 12px;
+	border: 2px solid #003A3D;
+}
+
+div#diagnoseViz {
+	border: 8px solid #B0D239;
+}
+
+div#treatViz {
+	border: 8px solid #C1962E;
+}
+
+div#preventViz {
+	border: 8px solid #185A61;
+}
+
+div#monitorViz {
+	border: 8px solid #898268;
+}
+
+div#getInvolved {
+	margin: 0% 4% 2.0rem 4%;
+	padding: 1.0rem;
+	background-color: #EAE7DA;
+	border-radius: 24px;
+	border: 4px solid #D2D0C2;
+}
+
+div#whatIsCHAMPS {
+	background-color: #C1962E;
+	background-image: url("../images/whatIsCHAMPSBackground.png");
+	background-size: 220%;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	border-radius: 45px 45px 0px 0px;
+}
+
+div#whatIsCHAMPSContent {
+	padding: 1.0rem 1.0rem 0.0rem 1.0rem;
+}
+
+div#contactUsForm {
+	margin: 0% 4% 2.0rem 4%;
+	padding: 1.0rem;
+	background-color: #EAE7DA;
+	border-radius: 24px;
+	border: 4px solid #D2D0C2;
+}
+
+div#footer {
+	background-color: #221646;
+}
+
+
+/* # # # # # # # # # # #
+
+Changes to layout for tablets, laptops, and desktops
+
+# # # # # # # # # # # */
+
+@media only screen and (min-width: 700px) {
+  /* For tablets & smaller laptops: */
+
+  
+  	div#seal {
+  		display: inline-block;
+  	}
+  
+  	div#menuButtons {
+  		text-align: left;
+  	}
+  
+  	div#fixedMenuFix {
+  		height: 5.3rem;
+	}
+  
+	div#whatIsGTwoZ {
+		background-size: 100%;
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+	}
+	
+	div#whatIsGTwoZColOnePic {
+		margin: 0% 0% 0% 15%;
+	}
+
+	div#whatIsGTwoZColTwo {
+		margin: 0% 25% 0% 3%;
+	}
+
+	div#pillarsAndMission {
+		margin: 0% 2% 0% 2%;
+	}
+
+	div#pillarsIconsContainer {
+		grid-template-columns: 1fr 4fr;
+	}
+	
+	div#fourPillars {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		background-color: #D8D8CC;
+		border-radius: 8px;
+	}
+
+	div#mission {
+		background-size: 100%;
+		padding: 2.0rem;
+		grid-template-columns: 2fr 2fr 1fr;
+	}
+	
+	div#mission div:first-child {
+		margin-top: 2.0rem;
+	}
+	
+	/*div#mission div:last-child {
+		margin: 5.0rem 0.0rem 0.0rem 0.0rem;
+	}*/
+	
+	div#mission div {
+		margin-top: 2.0rem;
+	}
+
+	div#endEpidemicYT {
+		padding: 0.0rem;
+		border-radius: 45px 0px 0px 45px;
+		margin: 0% 8% 2.0rem 8%;
+		display: grid;
+	}
+
+	div#dataOverview {
+		background-size: 100%;
+	}
+
+	div#getInvolved {
+		padding: 2.0rem;
+	}
+	
+	div#getInvolved div {
+		display: grid;
+		column-gap: 1.0rem;
+	}
+
+	div#whatIsCHAMPS {
+		background-size: 100%;
+	}
+
+	div#whatIsCHAMPSContent {
+		padding: 1.0rem 3.0rem 0.0rem 3.0rem;
+		display: grid;
+	}
+
+	div.photosColumn {
+  		flex: 50%;
+	}
+
+	div.photosColumn img {
+		width: auto;
+		max-width: 600px;
+	}
+
+	div#footer {
+		padding: 1.0rem;
+		display: grid;
+	}
+	
+	div#footerMenu {
+		text-align: left;
+	}
+
+}
+
+/* # # # # # # # # # # #
+
+Changes to layout for laptops and desktops
+Most of these are setups for multi-column
+layouts
+
+# # # # # # # # # # # */
+
+@media only screen and (min-width: 1010px) {
+
+	div.communityMessages {
+		grid-template-columns: 2fr 1fr;
+	}
+
+	div.fourthsRt {
+		grid-template-columns: 1fr 3fr;
+	}
+	
+	div.fourthsLt {
+		grid-template-columns: 3fr 1fr;
+	}
+	
+	div.thirdsRt {
+		display: grid;
+		column-gap: 1.0rem;
+		grid-template-columns: 1fr 2fr;
+	}
+	
+	div.thirdsLt {
+		display: grid;
+		column-gap: 1.0rem;
+		grid-template-columns: 2fr 1fr;
+	}
+
+	div.halves {
+		display: grid;
+		column-gap: 1.0rem;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.dataCol div {
+		width: auto;
+	}
+
+	div.photosColumn img {
+		width: 600px;
+		height: auto;
+	}
+
+}
+
+

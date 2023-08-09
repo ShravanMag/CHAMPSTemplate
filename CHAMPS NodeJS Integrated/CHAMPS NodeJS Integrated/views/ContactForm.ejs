@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	
+	<title>APHI CHAMPS Dashboard</title>
+
+	<link rel="stylesheet" media="screen" href="css/styles.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<div id="pageContent">
+		
+			<%- include('./partials/header.ejs')%>
+	
+			<!-- *&*&*&*&*&*&*&*&*&*&
+			
+			The DIV below spaces the content 
+			down to accomodate the fixed menu 
+			
+			*&*&*&*&*&*&*&*&*&*&*&*& -->
+	
+			<div id="fixedMenuFixRegular"></div>
+
+		
+			<div id="interiorPage">
+			
+				<div class="textContent">
+				
+					<h1>Contact Us</h1>
+				
+					<div id="contactUsForm">
+						<form action="#" id="contactForm" method="post" name="form">
+						<input id="name" name="name" placeholder="Name" type="text"><br />
+						<input id="email" name="email" placeholder="Email" type="text"><br />
+						<textarea id="msg" name="message" placeholder="Message"></textarea><br />
+						<a href="javascript:%20check_empty()" onlick="messageSent()" id="sendButton">Send</a>
+						</form>
+    				</div>
+    				
+    				<p><strong>Disclaimer:</strong> Thank you for contacting Mecklenburg County Public Health. We make every effort to respond to questions within 2 business days, except weekends or holidays. We do not provide medical advice.</p?>      
+    				
+    				<p>For medical questions Call: Your primary care provider; insurance provider or the nurse line on the back of your insurance card; or 911 for all medical emergencies.</p>
+    				
+      				<p>Go to an urgent care facility or an emergency room (for medical emergencies). Please note that you will be responsible for any bill that results from your visit to one of these facilities.</p>
+		
+				</div>
+			
+			</div>
+		
+			<%- include('./partials/footer.ejs')%>
+		
+		</div>
+
+	</div>
+
+</body>
+
+</html>

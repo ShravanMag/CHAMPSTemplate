@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	
+	<title>APHI CHAMPS Dashboard</title>
+
+  	<link rel="stylesheet" type="text/css" href="css/CommunityMessage.css">
+
+	<link rel="stylesheet" media="screen" href="css/styles.css">
+
+	
+	<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+	
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<div id="pageContent">
+			
+			<%- include('./partials/header.ejs')%>
+	
+			<!-- *&*&*&*&*&*&*&*&*&*&
+			
+			The DIV below spaces the content 
+			down to accomodate the fixed menu 
+			
+			*&*&*&*&*&*&*&*&*&*&*&*& -->
+	
+			<div id="fixedMenuFixRegular"></div>
+
+		
+			<div id="interiorPage" class="centerContents">
+			
+				<div class="textContent">
+				
+					<h1>Messages from Community Members</h1>
+			
+					<div>
+						<input class="checkbox frst" type="radio" id="slide-1" name="slider" checked style="display:none;"/>
+						<label for="slide-1"></label>
+						<input class="checkbox scnd" type="radio" name="slider" id="slider-2" style="display:none;"/>
+						<label for="slider-2"></label>
+						<input class="checkbox thrd" type="radio" name="slider" id="slider-3" style="display:none;"/>
+						<label for="slider-3"></label>
+						<input class="checkbox foth" type="radio" name="slider" id="slider-4" style="display:none;"/>
+						<label for="slider-4"></label>
+						<input class="checkbox fith" type="radio" name="slider" id="slider-5" style="display:none;"/>
+						<label for="slider-5"></label>
+						<input class="checkbox sixth" type="radio" name="slider" id="slider-6" style="display:none;"/>
+						<label for="slider-6"></label>
+						
+						<div id="communityMessagesCarousel">
+						
+							<div class="communityMessages">
+								<div>
+									<p>"I have provided care for the HIV/AIDS population since 1985. I have seen us go from hand-holding and funerals to weddings and baby showers, because our patients are not just surviving, but thriving. Ending the HIV Epidemic would be the completion of the miracle of care we have observed."</p>
+									
+									<p>- Joel Wesley Thompson, MHS, PA-C, AAHIVS, DFAAPA</p>
+									
+									<p>HIV Medical Director and Physician Assistant, Amity Medical Group</p>
+								</div>
+							
+								<div><img src="images/messagesFromCommunity_Joe.jpg" /></div>
+							</div>
+							
+							<div class="communityMessages">
+								<div>
+									<p>"Ending the HIV epidemic would mean that members of our community and their respective families would no longer have to sit privy to receive that life-changing HIV diagnosis."</p>
+									
+									<p>- Jason L Hardin, MSN, AGNP-C, AAHIVS</p>
+								</div>
+							
+								<div><img src="images/Profile_JLH.png" /></div>
+							</div>
+						
+						
+							<div class="communityMessages">
+								<div>
+									<p>"Ending the HIV Epidemic means that we must first recognize that we have a problem in our community around this issue. Then we must commit to working collectively and collaboratively to identify solutions to address barriers to services in a way that those in need of the services feel empowered to seek and utilize those services."</p>
+								
+									<p>- Matt Jenkins, MPA</p>
+									
+									<p>Director of the HIV/STD Division, Mecklenburg County Public Health</p>
+									
+								</div>
+							
+								<div><img src="images/messagesFromCommunity_Matt.jpg" /></div>
+							</div>
+						
+							<div class="communityMessages">
+								<div>
+									<p>"The CDC defines health equity as the state in which everyone has a fair and just opportunity to attain their highest level of health. For Black Americans, ending the epidemic of HIV means health equity void of the barriers of systemic and structural racism create. At Quality, we aim to meet this need by providing competent and compassionate care to underserved communities disproportionately impacted by HIV/AIDS."</p>
+								
+									<p>- L'Monique King, CBO</p>
+								
+								</div>
+							
+								<div><img src="images/messagesFromCommunity_LMonique.jpg" /></div>
+							</div>
+						
+							<div class="communityMessages">
+								<div>
+									<p>"I have been a faith-based advocate for HIV prevention and care since the early nineties. My Doctor of Ministry degree focus is 'Spirituality and Sexuality in the African American Church.' I have been challenging African American pastors and leaders to break the silence and address HIV and other STDs in their churches and communities. Ending the HIV Epidemic would mean African American people of faith would worship with others without fear of being discovered they are [people with HIV]."</p>
+								
+									<p>- Reverend Doctor Teresa S McIlwain</p>
+								
+								</div>
+							
+								<div><img src="images/messagesFromCommunity_Teresa.jpg" /></div>
+							</div>
+						
+							<div class="communityMessages">
+								<div>
+									<p>"We have the tools to end the HIV epidemic, but we need to be more effective in using them. Lessening barriers to HIV diagnosis and care, addressing stigmatization and supportive communications are effective ways for us to help our friends, colleagues, and family to gain access to effective HIV prevention and treatment. Let's work together to end the HIV Epidemic."</p>
+									<p>- Dr. Patrick A Robinson</p>
+									
+									<p>Research Professor, Academy for Population Health Innovation (APHI), Department of Public Health Sciences, CHHS, UNC Charlotte</p>
+								
+								</div>
+							
+								<div><img src="images/messagesFromCommunity_Pat.jpg" /></div>
+							</div>
+						
+						</div>
+						
+					</div>
+				
+					<h1>History</h1>
+					
+					<img class="textPicRt" src="./images/JCSU_HealthFair.jpg" alt="This is a photo of healthcare workers at a health fair." />
+				
+					<p>The <a href="https://www.mecknc.gov/HealthDepartment/GettingToZero/Pages/Home.aspx" rel="noreferrer noopener">Getting to Zero Mecklenburg (G2Z) community group</a> formed in 2018 and began strategic plans to address the local HIV epidemic. Today, G2Z consists of more than 100 active members including HIV service providers, social workers, mental health providers, substance use providers, housing services providers, faith communities, community-based organizations (CBOs), non-profits, students, academic institutions, researchers, and people living with or affected by HIV.</p>
+
+                    <p>In December 2019, the <a href="https://www.hiv.gov/federal-response/ending-the-hiv-epidemic/overview" target="_blank" rel="noreferrer noopener">Ending the HIV Epidemic: A Plan for America</a> (EHE) federal initiative launched with the goal to reduce the number of new HIV infections in the United States by 90 percent by 2030. The EHE plan targeted 57 prioritized jurisdictions including Mecklenburg County.&nbsp;</p>
+                    
+                    <h1>Origins</h1>
+					
+					<p>G2Z members recommended applying for federal Ending the HIV Epidemic funding to create the CHAMPS dashboard. In 2020, Mecklenburg County Public Health was awarded federal funding to begin the development of the CHAMPS dashboard.</p>
+				
+					<p>The development of the CHAMPS dashboard was supported by EHE funding from the U.S. Department of Health and Human Services (<a href="https://www.hrsa.gov/ending-hiv-epidemic">HRSA</a>) and the Centers for Disease Control and Prevention (<a href="https://www.cdc.gov/nchhstp/newsroom/2021/ehe-funding.html">CDC</a>).</p>
+  
+					<p>The CHAMPS dashboard launched during World AIDS Day on December 1, 2024.</p>
+				
+
+                    
+                    <h1>Monitoring the EHE Plan Pillars</h1>
+                    
+                    <p><strong>Monitor</strong> trends in new HIV diagnoses and the total number of people living with HIV</p>
+                    
+					<div id="pillarsIconsContainer">
+					
+						<div id="monitorPillars">
+						
+							<div class="pillarsIcons centerContents" id="pillarsMonitor">
+								<img src="images/pillarsIconMonitor.png" />
+								<h2 id="monitorLabel">MONITOR</h2>
+							</div>
+						
+						</div>
+						
+						<div id="fourPillars">
+			
+							<div class="pillarsIcons centerContents" id="pillarsDiagnose">
+								<img src="images/pillarsIconDiagnose.png" />
+								<h2>DIAGNOSE</h2>
+							</div>
+				
+							<div class="pillarsIcons centerContents" id="pillarsTreat">
+								<img src="images/pillarsIconTreat.png" />
+								<h2>TREAT</h2>
+							</div>
+				
+							<div class="pillarsIcons centerContents" id="pillarsPrevent">
+								<img src="images/pillarsIconPrevent.png" />
+								<h2>PREVENT</h2>
+							</div>
+				
+							<div class="pillarsIcons centerContents" id="pillarsRespond">
+								<img src="images/pillarsIconRespond.png" />
+								<h2>RESPOND</h2>
+							</div>
+						
+						</div>
+						
+						<div></div>
+						
+						<div class="centerContents">
+							<h2 class="goldText">The Four EHE Plan Pillars</h2>
+						</div>
+				
+					</div>
+				
+					<p><strong>Diagnose</strong> all people living with HIV (PLWH) as early as possible</p>
+
+					<p><strong>Treat</strong> PLWH rapidly and effectively to reach sustained viral suppression</p>
+
+					<p><strong>Prevent</strong> new HIV transmissions by using proven interventions</p>
+
+					<p><strong>Respond</strong> quickly to potential HIV outbreaks to get prevention & treatment services to people who need them</p>
+			
+					<p>To read more about the Getting to Zero EHE Plan click <a href="https://www.mecknc.gov/HealthDepartment/GettingToZero/Documents/Mecklenburg%20County%27s%20Ending%20the%20HIV%20Epidemic%20Plan.pdf">here.</a></p>
+				
+					<h1>Purpose</h1>
+				
+				  	<p>The purpose of the Mecklenburg County Community HIV/AIDS Monitoring and Prevention System (CHAMPS) dashboard is to make data accessible and to monitor progress toward the four goals in the Getting to Zero EHE Plan to diagnose, treat, prevent, and respond to HIV locally. In addition, the CHAMPS dashboard monitors trends in new HIV diagnoses and the number of people living with HIV in our community.</p>
+      				
+      				<h1>Partners</h1>
+      				
+      				<p>In close consultation with Mecklenburg County’s G2Z group, the Academy for Population Health Innovation's (APHI) CHAMPS dashboard development team is a unique partnership between Mecklenburg County Public Health (MCPH) and the University of North Carolina at Charlotte (UNC Charlotte).</p>
+      				
+      				<h1>CHAMPS Dashboard APHI Development Team</h1>
+      				
+					<div class="halves">
+
+						<div>
+
+							<h2>Mecklenburg County Public Health</h2>
+							<p>
+							Alexia Williams, MPH<br />
+							Brian Witt, PhD, MPH<br />
+							Johnathan Wilson<br />
+							Jonathan Ong<br />
+							Luis Cruz<br />
+							Matt Jenkins, MPA<br />
+							Pamela Davis, MPH<br />
+							Valerie Henderson, MPH, CHES</p>
+			
+							<p>&nbsp;</p>
+			
+						</div>
+			
+						<div>
+
+							<h2>UNC Charlotte</h2>
+							<p>
+							Albert Park, PhD<br />
+							Meagan Zarwell, PhD<br />
+							Patrick Robinson, MD, MPH<br />
+							Renu Karule, ME<br />
+							Sriparna Mukherjee, PhD<br />
+							Susan Scherer, PhD<br />
+							Sweta Harihar, MS</p>
+			
+							<p>&nbsp;</p>
+			
+						</div>
+			
+					</div>
+					
+					<h2>Mecklenburg County Public Health Director</h2>
+					<p>
+					Raynard Washington, PhD</p>
+
+					<p>&nbsp;</p>
+
+					<h2>Advisory Board</h2>
+					<p>
+					Angela Lee, MPH<br /> 
+					Donna Smith, MSPH<br />
+					Kristi McCray, RN, BSN<br />
+					Michael Dulin, MD, PhD<br />
+					Michael E. Thompson, DrPH, MS<br />
+					Susan Long-Marin, DVM, MPH</p>
+
+					<p>&nbsp;</p>
+
+					<h2>Acknowledgements</h2>
+					<p>Akeen Lowell Hamilton, PhD; Alexandra Patton, MPH; Franck Diaz Garelli, PhD;
+					Gabriel Zenarosa, PhD; Indica Harris, MPH; Isaiah Omerhi, MPH; Kayla Earley, MPH; Kiran McCloskey, PhD;
+					Rajeev Mavath, MD, MPH; Renate Nnoko, MBA, MPH; Sagar Satyanarayana, PhD</p>
+				
+				</div>			
+			
+			</div>			
+  
+			<div id="getInvolved">
+			
+				<h1>Get Involved</h1>
+	
+				<div class="halves">
+	
+					<div>
+
+						<p>Learn more about HIV/STD Testing <a href="https://www.mecknc.gov/HealthDepartment/CDControl/HIVSTDSurveillance/Pages/STD-Testing-Sites.aspx" target="_blank" rel="noreferrer noopener">Options</a>; or call 704-432-8378.</p>
+
+						<p>Free HIV/STD Testing <a href="https://www.mecknc.gov/HealthDepartment/CDControl/HIVSTDSurveillance/Pages/Community-Testing-Sites.aspx" target="_blank" rel="noreferrer noopener">Locations</a> in Mecklenburg County.</p>
+
+						<p>Request <a href="https://forms.office.com/pages/responsepage.aspx?id=onDYAmvXWEix28CmftVFyBeP1BxOt8FOulHx_h9pOFxUQ0VDVEc1TTRMTEUzWUIxQ1lVQTRBVlVHVCQlQCN0PWcu" target="_blank" rel="noreferrer noopener">HIV testing for an event</a>.</p>
+		
+						<p>Health Statistic <a href="https://www.mecknc.gov/HealthDepartment/HealthStatistics/Pages/DataRequest.aspx" target="_blank" rel="noreferrer noopener">Data Request </a>Form.</p>
+	
+					</div>
+	
+					<div>
+
+						<p>Learn more about the <a href="https://www.mecknc.gov/HealthDepartment/GettingToZero/Pages/Home.aspx" target="_blank" rel="noreferrer noopener">Getting to Zero community group</a>.</p>
+
+						<p>Find a <a href="https://www.mecknc.gov/HealthDepartment/RyanWhite/providers/Pages/default.aspx" target="_blank" rel="noreferrer noopener">Ryan White Provider</a>.</p>
+
+						<p>Learn more about <a href="https://www.mecknc.gov/HealthDepartment/CDControl/HIVSTDSurveillance/Pages/PrEP.aspx" target="_blank" rel="noreferrer noopener">PrEP in Mecklenburg County</a>. Find a <a href="https://pleaseprepme.org/" target="_blank" rel="noreferrer noopener" style="color:#013a81;text-decoration:underline;">PrEP Provider</a>.</p>
+
+						<p>Looking for another resource? Click <a href="https://sschere1.wixsite.com/my-site-1/copy-of-about-us-2" target="_blank" rel="noreferrer noopener">here</a>.</p>
+	
+					</div>
+	
+				</div>						
+					
+			</div>
+		
+			<%- include('./partials/footer.ejs')%>
+		
+		</div>
+
+	</div>
+
+</body>
+
+</html>
